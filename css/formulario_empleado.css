@@ -1,0 +1,23 @@
+body{
+    background-color: #F05658;
+    display: flex;
+    justify-content: center;
+}
+/* Estilos para el formulario de empleados */
+.formulario_empleado{
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 700px;
+    height: 400px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.camposform_empleado h2{
+    justify-content: center;
+}
+
+.botonbusquedaempleado{
+
+}

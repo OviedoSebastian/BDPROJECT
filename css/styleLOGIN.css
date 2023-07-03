@@ -1,0 +1,53 @@
+body{
+    background-color: #F05658;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para el login */
+.formulario_login{
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 700px;
+    height: 400px;
+    padding: 5px;
+    margin-top: 50px;
+}
+.camposform h2{
+    margin: inherit;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #F05658;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.camposform label{
+    font-size: 1.1rem;
+}
+.botonlog{
+    background-color: #F05658;
+    border: inherit;
+    color: #ffffff;
+    width: 100%;
+    height: 30px;
+}
+.imglogin{
+    max-width: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.camposform{
+    margin-top: 20px;
+    position: relative;
+    top: -300px;
+    left: 350px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.camposform input{
+    margin-bottom: 20px;
+}

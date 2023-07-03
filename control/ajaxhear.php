@@ -9,6 +9,10 @@ switch ($action){
         $result = validaLogin( $_POST['username'], $_POST['password'] );
         break;
     
+    case 'BuscaEmpleado':
+        $result = BuscaEmpleado( $_POST['docempleado'] );
+        break;
+    
     default:
         $result = "no funciona";
         break;

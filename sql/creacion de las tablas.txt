@@ -1,0 +1,57 @@
+CREATE TABLE TipoDeIdentidad (
+  IdTipoIdentidad INT(11) NOT NULL,
+  NombreTipoIdentidad VARCHAR(20),
+  PRIMARY KEY (IdTipoIdentidad)
+);
+CREATE TABLE Rol (
+  IdRol INT(11) NOT NULL,
+  Nombre VARCHAR(40),
+  Descripcion VARCHAR(100),
+  PRIMARY KEY (IdRol)
+);
+CREATE TABLE Cargo (
+  IdCargo INT(11) NOT NULL,
+  Nombre VARCHAR(60),
+  Descripcion VARCHAR(200),
+  Estado VARCHAR(15),
+  PRIMARY KEY (IdCargo)
+);
+--insercion de datos
+INSERT INTO TipoDeIdentidad (IdTipoIdentidad, NombreTipoIdentidad)
+VALUES (1, 'Cédula');
+
+INSERT INTO TipoDeIdentidad (IdTipoIdentidad, NombreTipoIdentidad)
+VALUES (2, 'Pasaporte');
+
+INSERT INTO TipoDeIdentidad (IdTipoIdentidad, NombreTipoIdentidad)
+VALUES (3, 'Licencia de conducir');
+
+INSERT INTO Rol (IdRol, Nombre, Descripcion)
+VALUES (1, 'Administrador', 'Encargado de la administración del sistema');
+
+INSERT INTO Rol (IdRol, Nombre, Descripcion)
+VALUES (2, 'Vendedor', 'Encargado de las ventas');
+
+INSERT INTO Rol (IdRol, Nombre, Descripcion)
+VALUES (3, 'Técnico', 'Encargado del soporte técnico');
+
+INSERT INTO Cargo (IdCargo, Nombre, Descripcion)
+VALUES (1, 'Gerente', 'Encargado de la gestión general de la empresa');
+
+INSERT INTO Cargo (IdCargo, Nombre, Descripcion)
+VALUES (2, 'Supervisor', 'Encargado de supervisar al personal');
+
+INSERT INTO Cargo (IdCargo, Nombre, Descripcion)
+VALUES (3, 'Asistente', 'Brinda apoyo administrativo');
+
+INSERT INTO Empleado (IdEmpleado, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, IdRol1, Sexo, IdTipoIdentidad2, NumeroIdentidad, fechaNac, IdCargo1, Direccion, Telefono, Estado)
+VALUES (1, 'Juan', 'Pablo', 'García', 'López', 1, 'M', 1, '123456789', '1990-05-15', 1, 'Calle 123', '555-1234', 'Activo');
+
+INSERT INTO Empleado (IdEmpleado, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, IdRol1, Sexo, IdTipoIdentidad2, NumeroIdentidad, fechaNac, IdCargo1, Direccion, Telefono, Estado)
+VALUES (2, 'María', '', 'Hernández', 'Gómez', 2, 'F', 1, '987654321', '1992-10-20', 2, 'Avenida 456', '555-5678', 'Activo');
+
+INSERT INTO Empleado (IdEmpleado, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, IdRol1, Sexo, IdTipoIdentidad2, NumeroIdentidad, fechaNac, IdCargo1, Direccion, Telefono, Estado)
+VALUES (3, 'Luis', 'Carlos', 'Rodríguez', 'Sánchez', 2, 'M', 2, 'AA123456', '1995-03-10', 3, 'Boulevard 789', '555-9012', 'Inactivo');
+
+
+
